@@ -13,7 +13,6 @@ r.prototype = e.prototype, t.prototype = new r();
  */
 var Map = (function (_super) {
     __extends(Map, _super);
-    //
     function Map() {
         var _this = _super.call(this) || this;
         //所有蛇
@@ -26,9 +25,14 @@ var Map = (function (_super) {
         return _this;
     }
     Map.prototype.setMap = function () {
-        this.graphics.beginFill(0xffffff, 1);
-        this.graphics.drawRect(0, 0, Config.mapWidth, Config.mapHeight);
-        this.graphics.endFill();
+        // this.graphics.beginFill(0xff0000, 1);
+        // this.graphics.drawRect(0, 0, Config.mapWidth, Config.mapHeight);
+        // this.graphics.endFill();
+        this.bg = new egret.Bitmap();
+        this.bg.texture = RES.getRes("white_png");
+        this.bg.width = Config.mapWidth;
+        this.bg.height = Config.mapHeight;
+        this.addChildAt(this.bg, 0);
     };
     //将一条蛇添加进地图
     Map.prototype.addSnake = function (sk) {
@@ -62,7 +66,7 @@ var Map = (function (_super) {
     //添加一个食物
     Map.prototype.addFood = function (food) {
         //食物永远显示在最底层
-        this.addChildAt(food, 0);
+        this.addChildAt(food, 1);
         this.foodArr.push(food);
     };
     //移除一个食物

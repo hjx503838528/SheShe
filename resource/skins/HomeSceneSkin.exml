@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="HomeSceneSkin" width="800" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Group id="mainBtn" left="0" right="0" top="0" bottom="0">
-		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff" locked="true"/>
+		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
 		<e:Group left="0" right="0" top="0" bottom="0">
 			<e:Image source="food1" x="250" y="77" scaleX="1" scaleY="1"/>
 			<e:Image source="food2" x="190" y="243" scaleX="1" scaleY="1"/>

@@ -9,16 +9,21 @@ class Map extends egret.Sprite {
 	public cameraFollow: SankeBasic = null;
 	//所有食物
 	public foodArr: Array<any> = new Array();
-	//
+	public bg: egret.Bitmap;
 	public constructor() {
 		super();
 		this.setMap();
 	}
 
 	public setMap(): void {
-		this.graphics.beginFill(0xffffff, 1);
-		this.graphics.drawRect(0, 0, Config.mapWidth, Config.mapHeight);
-		this.graphics.endFill();
+		// this.graphics.beginFill(0xff0000, 1);
+		// this.graphics.drawRect(0, 0, Config.mapWidth, Config.mapHeight);
+		// this.graphics.endFill();
+		this.bg = new  egret.Bitmap();
+		this.bg.texture = RES.getRes("white_png");
+		this.bg.width = Config.mapWidth;
+		this.bg.height = Config.mapHeight;
+		this.addChildAt(this.bg,0)
 	}
 
 
@@ -54,7 +59,7 @@ class Map extends egret.Sprite {
 	//添加一个食物
 	public addFood(food: Food) {
 		//食物永远显示在最底层
-		this.addChildAt(food, 0);
+		this.addChildAt(food, 1);
 		this.foodArr.push(food);
 	}
 	//移除一个食物
