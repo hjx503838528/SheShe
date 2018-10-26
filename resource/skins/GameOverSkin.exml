@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameOverSkin" width="800" height="480" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" alpha="0.7"/>
+    <e:Group width="400" height="300" horizontalCenter="0" verticalCenter="0">
+        <e:Rect width="250" height="150" y="33" fillColor="0xff6699" horizontalCenter="0" x="75" scaleX="1" scaleY="1" />
+        <e:Label text="Game Over" y="56" bold="true" size="44" horizontalCenter="0" />
+        <e:Label text="Score:" y="122" bold="true" size="24" textColor="0xffff01" x="105" />
+        <e:Label id="lenTxt" text="1" y="122" size="24" textColor="0xffff01" x="183" width="110" textAlign="center" />
+        <e:Button id="rePlayBtn" y="222" skinName="BtnSkin" icon="rePlay" x="75" />
+        <e:Button id="homeBtn" y="222" skinName="BtnSkin" icon="goMain" horizontalCenter="0" />
+        <e:Button id="rankBtn" y="222" skinName="BtnSkin" icon="rank" x="270" />
+    </e:Group>
+</e:Skin>

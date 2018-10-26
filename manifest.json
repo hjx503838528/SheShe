@@ -1,0 +1,33 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/base/BaseClass.js",
+		"bin-debug/view/SankeBasic.js",
+		"bin-debug/she/She.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/base/Data.js",
+		"bin-debug/base/LuanMath.js",
+		"bin-debug/base/StageUtils.js",
+		"bin-debug/she/Food.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/view/Config.js",
+		"bin-debug/view/GameOver.js",
+		"bin-debug/view/GameScene.js",
+		"bin-debug/view/HomeScene.js",
+		"bin-debug/view/Map.js",
+		"bin-debug/view/MoveCtrl.js",
+		"bin-debug/view/SankeAI.js",
+		"bin-debug/Main.js",
+		"bin-debug/view/SheItem.js"
+	]
+}

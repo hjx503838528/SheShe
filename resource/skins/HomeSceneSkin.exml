@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HomeSceneSkin" width="800" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="mainBtn" left="0" right="0" top="0" bottom="0">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xffffff" locked="true"/>
+		<e:Group left="0" right="0" top="0" bottom="0">
+			<e:Image source="food1" x="250" y="77" scaleX="1" scaleY="1"/>
+			<e:Image source="food2" x="190" y="243" scaleX="1" scaleY="1"/>
+			<e:Image source="food3" x="678" scaleX="1" scaleY="1" bottom="435"/>
+			<e:Image source="food4" y="219.5" scaleX="1" scaleY="1" right="117"/>
+			<e:Image source="food5" y="315" scaleX="1" scaleY="1" right="69"/>
+            <e:Image source="food1" x="57" y="338" scaleX="1" scaleY="1"/>
+			<e:Image source="food2" y="253" scaleX="1" scaleY="1" right="37"/>
+			<e:Image source="food3" x="359" y="139" scaleX="1" scaleY="1"/>
+			<e:Image source="food4" x="347" y="109" scaleX="1" scaleY="1"/>
+			<e:Image source="food5" x="124" y="149" scaleX="1" scaleY="1"/>
+            <e:Image source="food1" x="245" y="301" scaleX="1" scaleY="1"/>
+			<e:Image source="food2" x="77" y="36" scaleX="1" scaleY="1"/>
+			<e:Image source="food3" x="148" scaleX="1" scaleY="1" y="427"/>
+			<e:Image source="food4" y="36" scaleX="1" scaleY="1" right="17"/>
+			<e:Image source="food5" y="167" scaleX="1" scaleY="1" right="34"/>
+            <e:Image source="food1" x="531" y="55" scaleX="1" scaleY="1"/>
+            <e:Image source="food2" y="275" scaleX="1" scaleY="1" right="185"/>
+            <e:Image source="food3" scaleX="1" scaleY="1" bottom="200" right="96"/>
+            <e:Image source="food4" x="240" scaleX="1" scaleY="1" bottom="105"/>
+            <e:Image source="food5" x="333" scaleX="1" scaleY="1" bottom="32"/>
+             <e:Image source="food1" scaleX="1" scaleY="1" bottom="76" right="153"/>
+            <e:Image source="food2" y="355" scaleX="1" scaleY="1" right="27"/>
+            <e:Image source="food3" x="393" scaleX="1" scaleY="1" bottom="13"/>
+            <e:Image source="food4" scaleX="1" scaleY="1" bottom="303" horizontalCenter="116"/>
+            <e:Image source="food5" x="333" scaleX="1" scaleY="1" bottom="33"/>
+             <e:Image source="food1" y="154" scaleX="1" scaleY="1" right="79"/>
+            <e:Image source="food2" x="521" scaleX="1" scaleY="1" bottom="25"/>
+            <e:Image source="food3" x="87" scaleX="1" scaleY="1" bottom="221"/>
+             <e:Image source="food4" scaleX="1" scaleY="1" bottom="18" right="79"/>
+            <e:Image source="food5" x="67" scaleX="1" scaleY="1" bottom="20" verticalCenter="215"/>
+             <e:Image source="food1" x="454" scaleX="1" scaleY="1" bottom="86"/>
+            <e:Image source="food2" x="276" scaleX="1" scaleY="1" bottom="64"/>
+            <e:Image source="food3" x="138" y="350" scaleX="1" scaleY="1"/>
+            <e:Image source="food4" x="67" y="243" scaleX="1" scaleY="1"/>
+            <e:Image source="food5" x="32" scaleX="1" scaleY="1" bottom="40"/>
+		</e:Group>
+		<e:Group id="titleCon" horizontalCenter="0" y="50">
+			<e:Label text="贪" textColor="0xff0000" size="60" rotation="339" y="30" bold="true"/>
+			<e:Label text="吃" textColor="0x009900" size="60" rotation="10" x="66" bold="true"/>
+			<e:Label text="蛇" textColor="0x3366FF" size="60" x="120" y="20" rotation="9" bold="true"/>
+            <e:Image source="title" x="180" y="18" scaleX="1" scaleY="1"/>
+		</e:Group>
+            <e:Image id="goBtn" scaleX="1" scaleY="1" source="wujinMs" horizontalCenter="0" verticalCenter="40"/>
+			<e:Button id="rankBtn" skinName="BtnSkin" icon="rank"  right="20" y="30"/>
+		<e:Group id="skinCon" height="459" y="10" left="0" right="0" visible="false">
+        <e:Label text="请选择一个皮肤" textColor="0x000000" size="50" y="0" bold="true" horizontalCenter="0"/>
+			<e:Scroller height="200" y="196" width="454" horizontalCenter="0">
+				<e:List id="list" itemRendererSkinName="SheItemSkin">
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object/>
+							<e:Object/>
+							<e:Object/>
+						</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+						<e:HorizontalLayout gap="20"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+        </e:Group>
+        
+	</e:Group>
+</e:Skin>
