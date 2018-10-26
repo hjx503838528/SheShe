@@ -47,9 +47,9 @@
 		</e:Group>
             <e:Image id="goBtn" scaleX="1" scaleY="1" source="wujinMs" horizontalCenter="0" verticalCenter="40"/>
 			<e:Button id="rankBtn" skinName="BtnSkin" icon="rank"  right="20" y="30"/>
-		<e:Group id="skinCon" height="459" y="10" left="0" right="0" visible="false">
+		<e:Group id="skinCon" y="40" left="0" right="0" visible="false">
         <e:Label text="请选择一个皮肤" textColor="0x000000" size="50" y="0" bold="true" horizontalCenter="0"/>
-			<e:Scroller height="200" y="196" width="454" horizontalCenter="0">
+			<e:Scroller height="200" y="150" width="454" horizontalCenter="0">
 				<e:List id="list" itemRendererSkinName="SheItemSkin">
 					<e:ArrayCollection>
 						<e:Array>

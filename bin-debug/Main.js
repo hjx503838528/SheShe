@@ -100,6 +100,7 @@ var Main = (function (_super) {
                         return [4 /*yield*/, RES.loadGroup("preload", 0, loadingView)];
                     case 3:
                         _a.sent();
+                        this.stage.removeChild(loadingView);
                         return [3 /*break*/, 5];
                     case 4:
                         e_1 = _a.sent();
@@ -126,7 +127,7 @@ var Main = (function (_super) {
      * Create scene interface
      */
     Main.prototype.createGameScene = function () {
-        // StageUtils.ins().getUIStage().addChild(new HomeScene())
+        StageUtils.ins().getUIStage().addChild(new HomeScene());
     };
     return Main;
 }(eui.UILayer));

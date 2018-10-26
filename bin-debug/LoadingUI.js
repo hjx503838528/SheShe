@@ -72,7 +72,7 @@ var LoadingUI = (function (_super) {
     };
     LoadingUI.prototype.onProgress = function (current, total) {
         var progress = Math.floor((current / total) * 100);
-        this.textField.text = "" + progress;
+        this.textField.text = progress + "%";
         // FBInstant.setLoadingProgress(progress);
     };
     return LoadingUI;
