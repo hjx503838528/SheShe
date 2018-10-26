@@ -16,7 +16,7 @@ class Map extends egret.Sprite {
 	}
 
 	public setMap(): void {
-		this.graphics.beginFill(0xffffff, 1);
+		this.graphics.beginFill(0xFCF9F9, 1);
 		this.graphics.drawRect(0, 0, Config.mapWidth, Config.mapHeight);
 		this.graphics.endFill();
 	}
