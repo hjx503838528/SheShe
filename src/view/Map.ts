@@ -19,11 +19,12 @@ class Map extends egret.Sprite {
 		// this.graphics.beginFill(0xff0000, 1);
 		// this.graphics.drawRect(0, 0, Config.mapWidth, Config.mapHeight);
 		// this.graphics.endFill();
-		this.bg = new  egret.Bitmap();
+		this.bg = new egret.Bitmap();
 		this.bg.texture = RES.getRes("white_png");
 		this.bg.width = Config.mapWidth;
 		this.bg.height = Config.mapHeight;
-		this.addChildAt(this.bg,0)
+		this.addChildAt(this.bg, 0)
+
 	}
 
 
